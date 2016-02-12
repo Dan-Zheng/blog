@@ -96,6 +96,7 @@ google_analytics:
   url:          //www.google-analytics.com/analytics.js
 
 # Site Twitter account handle
+#twitter:        sparanoid
 
 # Force UTF-8 encoding, enable this will simply add <meta charset="utf-8"> to the head of your pages
 # Default:      false
