@@ -44,6 +44,14 @@
 <!-- User custom scripts -->
 <script src="{{ '/js/user.js?assets-inline' | prepend: amsf_user_assets }}"></script>
 
+{% if page.permalink == '/'%}
+    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/bower_components/animate.css/animate.min.css' }}">
+    <script src="{{ '/bower_components/letteringjs/jquery.lettering.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/textillate/jquery.textillate.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/js/index.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+{% endif %}
+
 <!-- Google Analytics tracking code -->
 {{ amsf_google_analytics }}
 
