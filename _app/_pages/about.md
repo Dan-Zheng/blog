@@ -2,11 +2,9 @@
 layout: page
 title: About
 permalink: /about/
-desc: 關於・について
+desc: 关于・について
 ---
-Hi. I'm [Dan Zheng](http://danzheng.em) and I blog about web development.
+Hi. I'm [Dan Zheng](http://danzheng.em) and I blog about programming and language.
 
 [Email](mailto:zheng321@purdue.edu) -
 [Github](https://github.com/Dan-Zheng)
-
-All posts are &copy; Dan Zheng, all rights reserved.

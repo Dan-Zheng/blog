@@ -1,8 +1,14 @@
 - title: Home
   url:   /
 
-- title: News
-  url:   /news/
+- title: Code
+  url:   /code/
+
+- title: Lang
+  url:   /lang/
+
+- title: Misc
+  url:   /misc/
 
 - title: About
   url:   /about/

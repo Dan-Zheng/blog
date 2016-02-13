@@ -4,40 +4,18 @@ title: hon-ne
 permalink: /
 ---
 
-<!-- Article wrapper, limit width -->
 <article>
 
-  <!-- Post title -->
-  <header>
-    <h1>本音.<span class="tlt"> hon-ne.</span></h1>
+    <header>
+        <h1>本音.<span class="tlt"> hon-ne.</span></h1>
+        <small>A blog by <b>Dan Zheng</b>.</small>
+    </header>
 
-    <small>A blog by <b>Dan Zheng</b>.</small>
-  </header>
+    <small class="latest-post">
+        I recently wrote:
+        {% for post in site.posts limit:4 %}
+          {% include themes/{{ site.theme }}/includes/page-item.html %}
+        {% endfor %}
+   </small>
 
-  <div class="page-content">
-    <h2>Getting Started</h2>
-    {% for post in site.tags.getting-started %}
-      {% include themes/{{ site.theme }}/includes/page-item.html %}
-    {% endfor %}
-
-    <h2>Customization</h2>
-    {% for post in site.tags.customization %}
-      {% include themes/{{ site.theme }}/includes/page-item.html %}
-    {% endfor %}
-
-    <h2>Theme Curtana</h2>
-    {% for post in site.tags.curtana %}
-      {% include themes/{{ site.theme }}/includes/page-item.html %}
-    {% endfor %}
-
-    <h2>Deployment</h2>
-    {% for post in site.tags.deployment %}
-      {% include themes/{{ site.theme }}/includes/page-item.html %}
-    {% endfor %}
-
-    <h2>Miscellaneous</h2>
-    {% for post in site.tags.miscellaneous %}
-      {% include themes/{{ site.theme }}/includes/page-item.html %}
-    {% endfor %}
-  </div>
 </article>

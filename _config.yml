@@ -113,7 +113,7 @@ rss_excerpt:    false
 
 # Show generator credits
 # Default:      true
-credits:        true
+credits:        false
 
 # Items in robots.txt
 # For example:
