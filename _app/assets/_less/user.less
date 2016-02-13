@@ -8,11 +8,24 @@
   h4 { font-size: 84%;  opacity: .6; }
   h5 { font-size: 72%;  opacity: .5; }
   h6 { font-size: 60%;  opacity: .4; }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 6vmin 0 1rem;
+  }
+  header { padding-bottom: 8vmin; }
+  margin-bottom: 12vmin;
 }
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
 
 // Custom variables
 @fontstack-sans-serif: "Helvetica Neue", "Hiragino Sans GB", Arial, sans-serif;
-@fontstack-serif: Georgia, "Hiragino Mincho ProN", serif;
+@fontstack-serif: "Vollkorn", serif;
+@vollkorn: "Vollkorn", serif;
 @link-color: #ff00b4;
 @background-color: #fff;
 @text-color: #000;
@@ -28,13 +41,11 @@
   line-height: 0 !important;
 }
 
-#subtitle {
-    opacity: .9;
-}
-
 // Anti-alias text
+/*
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*/

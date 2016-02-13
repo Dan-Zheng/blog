@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>hon-ne</title><subtitle>A blog by Dan Zheng.</subtitle><updated>2016-02-13T02:04:42-05:00</updated><id>http://hon-ne.me/</id><rights>Copyright © 2016, Dan Zheng</rights><link rel="alternate" type="text/html" hreflang="en" href="http://hon-ne.me/" /><link rel="self" type="application/atom+xml" href="http://hon-ne.me/feed.xml" /><author><name>Dan Zheng</name><uri>http://hon-ne.me/</uri><email>zheng321@purdue.edu</email></author><entry><title>Multiple Themes Support</title><id>http://hon-ne.me/multiple-themes-support.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/multiple-themes-support.html" /><published>2015-08-18T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>hon-ne</title>
+  <subtitle>A blog by Dan Zheng.</subtitle>
+  <updated>2016-02-13T13:44:18-05:00</updated>
+  <id>http://hon-ne.me/</id>
+  <rights>Copyright © 2016, Dan Zheng</rights>
+
+  <link rel="alternate" type="text/html" hreflang="en" href="http://hon-ne.me/" />
+  <link rel="self" type="application/atom+xml" href="http://hon-ne.me/feed.xml" />
+
+  <author>
+    <name>Dan Zheng</name>
+    <uri>http://hon-ne.me/</uri>
+    <email>zheng321@purdue.edu</email>
+  </author>
+
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Multiple Themes Support</title>
+        <id>http://hon-ne.me/multiple-themes-support.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/multiple-themes-support.html" />
+        <published>2015-08-18T00:00:00-04:00</published>
+
+        
+          <updated>2015-08-18T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;From version 0.0.31, you can now use multiple themes in Almace Scaffolding. See &lt;a href=&quot;/themes.html&quot;&gt;Themes&lt;/a&gt; for more information.&lt;/p&gt;
 
@@ -6,7 +110,36 @@
           
         
       
-        </content><summary>From version 0.0.31, you can now use multiple themes in Almace Scaffolding. See Themes for more information.</summary></entry><entry><title>Welcome</title><id>http://hon-ne.me/welcome.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/welcome.html" /><published>2014-06-13T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>From version 0.0.31, you can now use multiple themes in Almace Scaffolding. See Themes for more information.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Welcome</title>
+        <id>http://hon-ne.me/welcome.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/welcome.html" />
+        <published>2014-06-13T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-13T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;AMSF, a.k.a. &lt;strong&gt;Almace Scaffolding&lt;/strong&gt;, is a super-fast Jekyll framework, supports live reloading (Browsersync), Less, HTML minification, inlined stylesheets and more.&lt;/p&gt;
 
@@ -40,7 +173,36 @@
           
         
       
-        </content><summary>AMSF, a.k.a. Almace Scaffolding, is a super-fast Jekyll framework, supports live reloading (Browsersync), Less, HTML minification, inlined stylesheets and more.</summary></entry><entry><title>Getting Started</title><id>http://hon-ne.me/getting-started.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/getting-started.html" /><published>2014-06-12T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>AMSF, a.k.a. Almace Scaffolding, is a super-fast Jekyll framework, supports live reloading (Browsersync), Less, HTML minification, inlined stylesheets and more.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Getting Started</title>
+        <id>http://hon-ne.me/getting-started.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/getting-started.html" />
+        <published>2014-06-12T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-12T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 
@@ -86,7 +248,36 @@
           
         
       
-        </content><summary>Requirements</summary></entry><entry><title>Customizing Styles</title><id>http://hon-ne.me/customizing-styles.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/customizing-styles.html" /><published>2014-06-11T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Requirements</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Customizing Styles</title>
+        <id>http://hon-ne.me/customizing-styles.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/customizing-styles.html" />
+        <published>2014-06-11T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-11T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;You can customize the basic look and feel without touching the theme files by changing &lt;code class=&quot;highlighter-rouge&quot;&gt;user.js&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;user.less&lt;/code&gt;:&lt;/p&gt;
 
@@ -107,7 +298,36 @@
           
         
       
-        </content><summary>You can customize the basic look and feel without touching the theme files by changing user.js and user.less:</summary></entry><entry><title>Configuration</title><id>http://hon-ne.me/configuration.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/configuration.html" /><published>2014-06-11T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>You can customize the basic look and feel without touching the theme files by changing user.js and user.less:</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Configuration</title>
+        <id>http://hon-ne.me/configuration.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/configuration.html" />
+        <published>2014-06-11T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-11T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;configuration-settings&quot;&gt;Configuration Settings&lt;/h2&gt;
 
@@ -132,7 +352,36 @@
           
         
       
-        </content><summary>Configuration Settings</summary></entry><entry><title>Themes</title><id>http://hon-ne.me/themes.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/themes.html" /><published>2014-06-10T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Configuration Settings</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Themes</title>
+        <id>http://hon-ne.me/themes.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/themes.html" />
+        <published>2014-06-10T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-10T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -196,7 +445,36 @@
           
         
       
-        </content><summary>Overview</summary></entry><entry><title>Creating Your Own Theme</title><id>http://hon-ne.me/creating-themes.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/creating-themes.html" /><published>2014-06-09T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Overview</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Creating Your Own Theme</title>
+        <id>http://hon-ne.me/creating-themes.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/creating-themes.html" />
+        <published>2014-06-09T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-09T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -575,7 +853,36 @@ Reading time: 3 hrs 20 mins
           
         
       
-        </content><summary>Overview</summary></entry><entry><title>Syntax Highlighting</title><id>http://hon-ne.me/syntax-highlighting.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/syntax-highlighting.html" /><published>2014-06-06T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Overview</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Syntax Highlighting</title>
+        <id>http://hon-ne.me/syntax-highlighting.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/syntax-highlighting.html" />
+        <published>2014-06-06T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-06T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;Code highlighting demo, powered by Rouge. More info about code highlighting can be found at &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;Jekyll’s documentation&lt;/a&gt;.&lt;/p&gt;
 
@@ -875,7 +1182,36 @@ and &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&
           
         
       
-        </content><summary>Code highlighting demo, powered by Rouge. More info about code highlighting can be found at Jekyll’s documentation.</summary></entry><entry><title>Markdown Features Test</title><id>http://hon-ne.me/markdown-features-test.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/markdown-features-test.html" /><published>2014-06-06T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Code highlighting demo, powered by Rouge. More info about code highlighting can be found at Jekyll’s documentation.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Markdown Features Test</title>
+        <id>http://hon-ne.me/markdown-features-test.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/markdown-features-test.html" />
+        <published>2014-06-06T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-06T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;indented-code-blocks&quot;&gt;Indented Code Blocks&lt;/h2&gt;
 
@@ -1011,7 +1347,36 @@ end
           
         
       
-        </content><summary>Indented Code Blocks</summary></entry><entry><title>Markup Example</title><id>http://hon-ne.me/markup-example.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/markup-example.html" /><published>2014-06-05T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Indented Code Blocks</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Markup Example</title>
+        <id>http://hon-ne.me/markup-example.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/markup-example.html" />
+        <published>2014-06-05T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-05T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;Lorem lean startup ipsum &lt;strong&gt;product market fit customer development&lt;/strong&gt; acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying &lt;a href=&quot;#&quot;&gt;crowded market&lt;/a&gt; pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic location based strategic investor.&lt;/p&gt;
 
@@ -1043,71 +1408,39 @@ end
 
 &lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
 
-&lt;p&gt;Maui and his rough as guts piece of pounamu, what a stink buzz. Bro, quater-acre patches are really naff good with bung mates, aye. You have no idea how beached as our random kais were aye. Every time I see those beautiful lengths of number 8 wire it’s like Castle Hill all over again aye, do you happen to have a bucket or a hose bro?&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;h2 id=&quot;h2-headings&quot;&gt;H2 Headings&lt;/h2&gt;
 
-&lt;p&gt;You have no idea how pretty suss our same same but different toasted sandwiches were aye. Every time I see those carked it keas it’s like the dairy all over again aye, you don’t know his story, bro. Anyway, Hairy Maclary from Donaldson’s Dairy is just Mrs Falani in disguise, to find the true meaning of life, one must start frying up with the hangi, mate. After the rugby ball is jumped the ditch, you add all the stink girl guide biscuits to the trotie you’ve got yourself a meal.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;h3 id=&quot;h3-headings&quot;&gt;H3 Headings&lt;/h3&gt;
 
-&lt;p&gt;You have no idea how pretty suss our same same but different toasted sandwiches were aye. Every time I see those carked it keas it’s like the dairy all over again aye, you don’t know his story, bro. Anyway, Hairy Maclary from Donaldson’s Dairy is just Mrs Falani in disguise, to find the true meaning of life, one must start frying up with the hangi, mate. After the rugby ball is jumped the ditch, you add all the stink girl guide biscuits to the trotie you’ve got yourself a meal.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;h4 id=&quot;h4-headings&quot;&gt;H4 Headings&lt;/h4&gt;
 
-&lt;p&gt;You have no idea how pretty suss our same same but different toasted sandwiches were aye. Every time I see those carked it keas it’s like the dairy all over again aye, you don’t know his story, bro. Anyway, Hairy Maclary from Donaldson’s Dairy is just Mrs Falani in disguise, to find the true meaning of life, one must start frying up with the hangi, mate. After the rugby ball is jumped the ditch, you add all the stink girl guide biscuits to the trotie you’ve got yourself a meal.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;h5 id=&quot;h5-headings&quot;&gt;H5 Headings&lt;/h5&gt;
 
-&lt;p&gt;You have no idea how pretty suss our same same but different toasted sandwiches were aye. Every time I see those carked it keas it’s like the dairy all over again aye, you don’t know his story, bro. Anyway, Hairy Maclary from Donaldson’s Dairy is just Mrs Falani in disguise, to find the true meaning of life, one must start frying up with the hangi, mate. After the rugby ball is jumped the ditch, you add all the stink girl guide biscuits to the trotie you’ve got yourself a meal.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;h6 id=&quot;h6-headings&quot;&gt;H6 Headings&lt;/h6&gt;
 
-&lt;p&gt;You have no idea how pretty suss our same same but different toasted sandwiches were aye. Every time I see those carked it keas it’s like the dairy all over again aye, you don’t know his story, bro. Anyway, Hairy Maclary from Donaldson’s Dairy is just Mrs Falani in disguise, to find the true meaning of life, one must start frying up with the hangi, mate. After the rugby ball is jumped the ditch, you add all the stink girl guide biscuits to the trotie you’ve got yourself a meal.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;He was alone then; when he sat in that same chair his wife now sits in, and I shared with him the positive result to his HIV test. Though he seemed disinterested, vaguely detached, he had obviously heard of HIV before. His chart from the local clinic indicated a previous history of and treatment for anal gonorrhea, two acute cases of syphilis in the past three years, and a urinary tract infection last month. His only listed sexual contact, his wife. Who, strangely enough, only tested positive for one of the syphilis infections.&lt;/p&gt;
-
-&lt;p&gt;“Mistake, this! I am married, not a giver of ass.”&lt;/p&gt;
-
-&lt;p&gt;Giver of ass? That’s one for the archive, I think.&lt;/p&gt;
-
-&lt;p&gt;Unwilling to engage his obvious denials, I ignore the comment and instead explain that due to a higher than acceptable potential of a false positive result, we won’t consider his oral test as confirmatory until the more accurate blood analysis is in.&lt;/p&gt;
-
-&lt;p&gt;“I no understand”, he says to the room in general.&lt;/p&gt;
-
-&lt;p&gt;His annoyance is obvious. Abrasively, he offers me his exposed forearm. This, I assume, is my cue to draw his blood. Ignoring the indignant anger beginning to rise, I tighten my jaw, then swab the fat vein with betadine, working the cool, brown liquid off in concentric circles, using strong medicinal smelling alcohol. I use the betadine, as most of these men work in the mines, and dirt three layers thick on exposed skin is the norm. As the first tube in the vacationer fills with blood, he asks,&lt;/p&gt;
-
-&lt;p&gt;“So how I get this thing?”&lt;/p&gt;
-
-&lt;p&gt;Ah, I see we are going to play the circuitous dance of ignorance. Sounding just a little too clinical, I begin the HIV 101 mantra.&lt;/p&gt;
-
-&lt;p&gt;“Well, people acquire HIV through certain types of sex with an infected person, through sharing needles with an infected person, and sometimes through a blood transfusion. Have you ever had a blood transfusion, sir?”&lt;/p&gt;
-
-&lt;p&gt;I take the dismissive wave of his hand as a no to the transfusion question. I don’t make a great attempt to navigate a comfort zone here; instinct and experience telling me he has already set the script of what is to follow.&lt;/p&gt;
-
-&lt;p&gt;“She is fucking other cocks my whore devil wife”?
-Bingo! A narrative that over the next six weeks I will hear from several other men as well.&lt;/p&gt;
-
-&lt;p&gt;“These whores, all they want is the cock!”
-Careful Skippy, you really aren’t as convincing as you think you are.&lt;/p&gt;
+&lt;p&gt;Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;
-    “She is fucking other cocks my whore devil wife”?
-    &lt;br /&gt;
-    Bingo! A narrative that over the next six weeks I will hear from several other men as well.
-  &lt;/p&gt;
-
-  &lt;p&gt;
-    “These whores, all they want is the cock!”
-    &lt;br /&gt;
-    Careful Skippy, you really aren’t as convincing as you think you are.
+    Warning: this comic occasionally contains strong language (which may be unsuitable for children), unusual humor (which may be unsuitable for adults), and advanced mathematics (which may be unsuitable for liberal-arts majors).
   &lt;/p&gt;
 
   &lt;footer&gt;
-    &lt;cite&gt;from &lt;a href=&quot;https://medium.com/absurdist/a-world-away-c2b692bd808e&quot;&gt;A World Away&lt;/a&gt; by alto&lt;/cite&gt;
+    &lt;cite&gt;from &lt;a href=&quot;http://xkcd.com/&quot;&gt;xkcd&lt;/a&gt; by Randall Munroe&lt;/cite&gt;
   &lt;/footer&gt;
 &lt;/blockquote&gt;
 
@@ -1131,7 +1464,36 @@ Careful Skippy, you really aren’t as convincing as you think you are.&lt;/p&gt
           
         
       
-        </content><summary>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic location based strategic investor.</summary></entry><entry><title>Custom HTML Markups</title><id>http://hon-ne.me/custom-html-markups.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/custom-html-markups.html" /><published>2014-06-01T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>Lorem lean startup ipsum product market fit customer development acquihire technical cofounder. User engagement A/B testing shrink a market venture capital pitch deck. Social bookmarking group buying crowded market pivot onboarding freemium prototype ping pong. Early stage disruptive ecosystem community outreach dynamic location based strategic investor.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Custom HTML Markups</title>
+        <id>http://hon-ne.me/custom-html-markups.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/custom-html-markups.html" />
+        <published>2014-06-01T00:00:00-04:00</published>
+
+        
+          <updated>2014-06-01T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;note-store-and-download&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.note&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.store&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;.download&lt;/code&gt;&lt;/h2&gt;
 
@@ -1243,7 +1605,36 @@ Careful Skippy, you really aren’t as convincing as you think you are.&lt;/p&gt
           
         
       
-        </content><summary>.note, .store, and .download</summary></entry><entry><title>Custom Color Scheme</title><id>http://hon-ne.me/custom-color-scheme.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/custom-color-scheme.html" /><published>2014-05-01T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>.note, .store, and .download</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Custom Color Scheme</title>
+        <id>http://hon-ne.me/custom-color-scheme.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/custom-color-scheme.html" />
+        <published>2014-05-01T00:00:00-04:00</published>
+
+        
+          <updated>2014-05-01T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;This is an example how to change your post color scheme for specific posts. You can simply add the following variables to your post &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front-matter field&lt;/a&gt;:&lt;/p&gt;
 
@@ -1265,7 +1656,36 @@ scheme-bg: &quot;#00ebff&quot;
           
         
       
-        </content><summary>This is an example how to change your post color scheme for specific posts. You can simply add the following variables to your post front-matter field:</summary></entry><entry><title>Unique Post Styling via Custom CSS</title><id>http://hon-ne.me/custom-css.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/custom-css.html" /><published>2014-04-01T00:00:00-04:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>This is an example how to change your post color scheme for specific posts. You can simply add the following variables to your post front-matter field:</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Unique Post Styling via Custom CSS</title>
+        <id>http://hon-ne.me/custom-css.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/custom-css.html" />
+        <published>2014-04-01T00:00:00-04:00</published>
+
+        
+          <updated>2014-04-01T00:00:00-04:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;This is an example how to change your post styling via CSS. You can simply add the &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; option to your post &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front-matter field&lt;/a&gt;:&lt;/p&gt;
 
@@ -1286,7 +1706,36 @@ css: |
           
         
       
-        </content><summary>This is an example how to change your post styling via CSS. You can simply add the css option to your post front-matter field:</summary></entry><entry><title>SVG Post Title</title><id>http://hon-ne.me/svg-post-title.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/svg-post-title.html" /><published>2014-02-01T00:00:00-05:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>This is an example how to change your post styling via CSS. You can simply add the css option to your post front-matter field:</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>SVG Post Title</title>
+        <id>http://hon-ne.me/svg-post-title.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/svg-post-title.html" />
+        <published>2014-02-01T00:00:00-05:00</published>
+
+        
+          <updated>2014-02-01T00:00:00-05:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;This is an example of custom post title using SVG image. You can simply add the following setting to your post &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front-matter field&lt;/a&gt;:&lt;/p&gt;
 
@@ -1319,7 +1768,36 @@ img-headline-width: 500
           
         
       
-        </content><summary>This is an example of custom post title using SVG image. You can simply add the following setting to your post front-matter field:</summary></entry><entry><title>External Link Post</title><id>http://hon-ne.me/external-link-post.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/external-link-post.html" /><published>2014-02-01T00:00:00-05:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>This is an example of custom post title using SVG image. You can simply add the following setting to your post front-matter field:</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>External Link Post</title>
+        <id>http://hon-ne.me/external-link-post.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/external-link-post.html" />
+        <published>2014-02-01T00:00:00-05:00</published>
+
+        
+          <updated>2014-02-01T00:00:00-05:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;p&gt;This is an example of Tumblr-like external link post. You can simply add the following setting to your post &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front-matter field&lt;/a&gt;:&lt;/p&gt;
 
@@ -1333,7 +1811,36 @@ img-headline-width: 500
           &lt;p&gt;&lt;a href=&quot;http://sparanoid.com/&quot;&gt;&lt;small&gt;◉ Direct Link to Original Site&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
         
       
-        </content><summary>This is an example of Tumblr-like external link post. You can simply add the following setting to your post front-matter field:</summary></entry><entry><title>GitHub Pages Setup Guide</title><id>http://hon-ne.me/github-pages-setup.html</id><link rel="alternate" type="text/html" href="http://hon-ne.me/github-pages-setup.html" /><published>2014-01-01T00:00:00-05:00</published><updated>2016-02-12T15:07:02-05:00</updated><author><name>Dan Zheng</name><uri>http://danzheng.me</uri><email>zheng321@purdue.edu</email></author><content type="html" xml:base="http://hon-ne.me/">
+        </content>
+
+        
+          <summary>This is an example of Tumblr-like external link post. You can simply add the following setting to your post front-matter field:</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>GitHub Pages Setup Guide</title>
+        <id>http://hon-ne.me/github-pages-setup.html</id>
+        <link rel="alternate" type="text/html" href="http://hon-ne.me/github-pages-setup.html" />
+        <published>2014-01-01T00:00:00-05:00</published>
+
+        
+          <updated>2014-01-01T00:00:00-05:00</updated>
+        
+
+        <author>
+          <name>Dan Zheng</name>
+          <uri>http://danzheng.me</uri>
+          <email>zheng321@purdue.edu</email>
+        </author>
+
+        <content type="html" xml:base="http://hon-ne.me/">
           
             &lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
 
@@ -1368,4 +1875,12 @@ img-headline-width: 500
           
         
       
-        </content><summary>The Problem</summary></entry></feed>
+        </content>
+
+        
+          <summary>The Problem</summary>
+        
+      </entry>
+    
+  
+</feed>

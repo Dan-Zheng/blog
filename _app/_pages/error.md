@@ -1,10 +1,13 @@
 ---
 layout: page
-title: Error‽
+title: 404!
 permalink: /404.html
-desc: 錯誤・エラー・Oops
+desc: 错误・エラー・Error
 category: home
 ---
 
-<p>The requested URL was not found on this server.</p>
-<p>I’m sorry, you can close this tab now.</p>
+Oops.
+
+This is not the webpage you are looking for.
+
+Sorry. :(
