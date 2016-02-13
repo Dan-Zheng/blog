@@ -1,4 +1,0 @@
-User-agent: *
-
-
-Sitemap: http://hon-ne.me/sitemap.xml
