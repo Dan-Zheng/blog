@@ -101,7 +101,7 @@ Contact = function() {
         links: []
     };
     $("#contact-cv").attr("href", c.cv);
-    var i = $("#contact-svg-container").width(), j = 400/*j = $("#contact-svg-container").height()*/, k = 480 > i ? 120: 250;
+    var i = $("#contact-svg-container").parent().width(), j = 400/*j = $("#contact-svg-container").height()*/, k = 480 > i ? 120: 250;
     d.forEach(function(a, b) {
         if (0 == b)
             a.x = i / 2, a.y = j / 2;
@@ -152,6 +152,7 @@ Contact = function() {
 $(document).ready(function() {
     Contact();
 });
+
 /*
 var contact = $("#contact-svg"),
     aspect = contact.width() / contact.height(),
