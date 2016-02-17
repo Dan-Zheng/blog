@@ -36,51 +36,51 @@ CV = {
         ],
         passiveLinks: []
     }
-}
+};
 Contact = function() {
     function a() {
         l.start(), p = p.data(h.links, function(a) {
-            return a.source.index + "-" + a.target.index
+            return a.source.index + "-" + a.target.index;
         }), p.enter().append("line").attr("class", function(a) {
-            return 0 == a.source.index ? "link parent-link" : "link children-link"
+            return 0 === a.source.index ? "link parent-link" : "link children-link"
         }), p.exit().remove(), q = q.data(h.nodes, function(a) {
-            return a.index
+            return a.index;
         }), g = q.enter().append("g").attr("class", "gnode").attr("transform", function(a) {
-            return "translate(" + a.x + "," + a.y + ")"
+            return "translate(" + a.x + "," + a.y + ")";
         }).call(l.drag), q.exit().remove(), g.append("circle").attr("class", "node").attr("r", function(a) {
-            return a.size
+            return a.size;
         }).style("fill", function(a) {
-            return a.color
+            return a.color;
         }).style("stroke", function(a) {
-            return d3.rgb(a.color).darker(1.2)
+            return d3.rgb(a.color).darker(1.2);
         }).attr("title", function(a) {
-            return a.name
+            return a.name;
         }), g.append("svg:a").attr("xlink:href", function(a) {
-            return a.href
+            return a.href;
         }).attr("target", "_blank").append("image").attr("xlink:href", function(a) {
-            return a.icon
+            return a.icon;
         }).attr("x", function(a) {
-            return - a.size
+            return - a.size;
         }).attr("y", function(a) {
-            return - a.size
+            return - a.size;
         }).attr("width", function(a) {
-            return 2 * a.size
+            return 2 * a.size;
         }).attr("height", function(a) {
-            return 2 * a.size
-        })
+            return 2 * a.size;
+        });
     }
     function b() {
         p.attr("x1", function(a) {
-            return a.source.x
+            return a.source.x;
         }).attr("y1", function(a) {
-            return a.source.y
+            return a.source.y;
         }).attr("x2", function(a) {
-            return a.target.x
+            return a.target.x;
         }).attr("y2", function(a) {
-            return a.target.y
+            return a.target.y;
         }), q.attr("transform", function(a) {
-            return "translate(" + a.x + "," + a.y + ")"
-        })
+            return "translate(" + a.x + "," + a.y + ")";
+        });
     }
     var c = CV.contact, d = c.links, e = c.passiveLinks, f = [{
         source: 1,
