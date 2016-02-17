@@ -10,4 +10,4 @@ Welcome!
 
 This blog is made with [AMSF](http://sparanoid.com/lab/amsf), a Jekyll framework.
 
-Go to the [GitHub](https://github.com/sparanoid/almace-scaffolding) page for downloads, bug reports, and feature requests.
+If you're interested in creating a blog like this, visit the [AMSF GitHub](https://github.com/sparanoid/almace-scaffolding) page.
