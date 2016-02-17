@@ -91,8 +91,8 @@ file:           //d349cztnlupsuf.cloudfront.net
 
 # Google Analytics tracking code
 google_analytics:
-  enabled:      false
-  id:           UA-xxxxxxx
+  enabled:      true
+  id:           UA-73888031-1
   url:          //www.google-analytics.com/analytics.js
 
 # Site Twitter account handle
