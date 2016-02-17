@@ -24,7 +24,7 @@ CV = {
             name: "Quora",
             icon: "../img/social/quora.svg",
             size: 28,
-            href: "https://www.quora.com/profile/Dan-Zheng-2",
+            href: "https://www.quora.com/profile/Dan-Zheng-2/activity",
             color: "#b72d2c"
         }, {
             name: "Pocket",
