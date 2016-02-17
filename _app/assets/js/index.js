@@ -1,1 +1,17 @@
-$(function(){$(".tlt").textillate({minDisplayTime:1500,initialDelay:500,"in":{effect:"fadeInLeft",sync:!1},out:{delay:3,effect:"fadeOut",sync:!1},loop:!0})});
+$(function () {
+    $('.tlt').textillate({
+	    minDisplayTime: 1500,
+        initialDelay: 500,
+	    in: {
+            effect: 'fadeInLeft',
+            sync: false
+        },
+	    out :{
+            delay: 3,
+            effect: 'fadeOut',
+            sync: false,
+        },
+
+	    loop: true
+	});
+});
