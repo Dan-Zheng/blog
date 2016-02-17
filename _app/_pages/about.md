@@ -10,3 +10,7 @@ I blog about programming and language.
 
 [Email](mailto:zheng321@purdue.edu) -
 [Github](https://github.com/Dan-Zheng)
+
+<div id="contact">
+    <div id="contact-svg-container"></div>
+</div>
