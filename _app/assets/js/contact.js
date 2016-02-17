@@ -4,31 +4,31 @@ CV = {
         cv: "cv.js",
         links: [{
             name: "Mail",
-            icon: "../assets/img/social/email.svg",
+            icon: "../img/social/email.svg",
             color: "#0C9688",
             href: "mailto:zheng321@purdue.edu",
             size: 56
         }, {
             name: "Facebook",
-            icon: "../assets/img/social/facebook.svg",
+            icon: "../img/social/facebook.svg",
             size: 28,
             href: "https://www.facebook.com/VoidQuery",
             color: "#3B5999"
         }, {
             name: "Github",
-            icon: "../assets/img/social/github.svg",
+            icon: "../img/social/github.svg",
             size: 28,
             href: "https://github.com/Dan-Zheng",
             color: "#0A0F19"
         }, {
             name: "Quora",
-            icon: "../assets/img/social/quora.svg",
+            icon: "../img/social/quora.svg",
             size: 28,
             href: "https://www.quora.com/profile/Dan-Zheng-2",
             color: "#b72d2c"
         }, {
             name: "Pocket",
-            icon: "../assets/img/social/pocket.svg",
+            icon: "../img/social/pocket.svg",
             href: "http://sharedli.st/danzheng",
             size: 28,
             color: "#EE4056"
@@ -151,6 +151,16 @@ Contact = function() {
 },
 $(document).ready(function() {
     Contact();
+    var contact = $("#contact-svg"),
+        aspect = contact.width() / contact.height(),
+        container = contact.parent().parent();
+    $(window).on("resize", function() {
+        console.log(container.attr("id"));
+        console.log(targetWidth);
+        var targetWidth = container.width();
+        contact.attr("width", targetWidth);
+        contact.attr("height", Math.round(targetWidth / aspect));
+    }).trigger("resize");
 });
 
 /*
