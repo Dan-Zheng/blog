@@ -6,8 +6,9 @@
 # {{ author.email }}: used in atom feed, homepage
 # {{ author.web }}: used in atom feed
 # {{ author.twitter }}: used by Twitter Cards
-name:         Dan Zheng
-nickname:     dan
-email:        zheng321@purdue.edu
-web:          http://danzheng.me
-github:       Dan-Zheng
+default:
+    name:         Dan Zheng
+    nickname:     dan
+    email:        zheng321@purdue.edu
+    web:          http://danzheng.me
+    github:       Dan-Zheng
