@@ -8,4 +8,4 @@ tags:
 
 This post is a tutorial for setting up the LEMP web development stack on DigitalOcean.
 
-<small>in progress</small>
+<small>_in progress_</small>
