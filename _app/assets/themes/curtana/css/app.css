@@ -1195,13 +1195,12 @@ body:hover .latest {
 .content header {
   padding-bottom: 8vmin;
   }
-.navigation {
-  margin: 0 0 10vmin;
-  }
-.center {
+.content .center {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+
+  margin-bottom: 0;
 
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
@@ -1209,6 +1208,9 @@ body:hover .latest {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
           justify-content: center;
+  }
+.navigation {
+  margin: 0 0 10vmin;
   }
 .parent-link {
   stroke: #888;
