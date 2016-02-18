@@ -70,15 +70,15 @@
       {{ amsf_page_heading }}
     </h1>
 
+    {% if page.desc %}
+      <small>{{ page.desc }}</small>
+    {% endif %}
+
     {% if page.date %}
       <small>
         By <span rel="author">{{ author.name }}</span>
         on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
       </small>
-    {% endif %}
-
-    {% if page.desc %}
-      <small>{{ page.desc }}</small>
     {% endif %}
 
   </header>
