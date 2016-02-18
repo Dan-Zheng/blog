@@ -20,11 +20,12 @@
   header { padding-bottom: 8vmin; }
   margin-bottom: 10vmin;
 
-  .center {
-      display: flex;
-      align-content: center;
-      justify-content: center;
-      margin-bottom: 0;
+  img,
+  video,
+  iframe,
+  .no-enlarge {
+      margin-left: auto !important;
+      margin-right: auto !important;
   }
 }
 
@@ -42,8 +43,9 @@
     stroke-width: 0.5px;
 }
 .img-phone {
-    width: inherit;
-    margin: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Google Fonts
