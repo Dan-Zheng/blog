@@ -1,19 +1,16 @@
 {
-  "name": "almace-scaffolding",
-  "version": "0.0.50",
-  "description": "Almace Scaffolding, a super-fast Jekyll framework",
-  "author": "Tunghsiao Liu",
-  "homepage": "http://sparanoid.com/lab/amsf/",
+  "name": "hon-ne",
+  "version": "0.0.1",
+  "description": "My personal blog.",
+  "author": "Dan Zheng",
+  "homepage": "http://danzheng.me",
   "main": "Gruntfile.coffee",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sparanoid/almace-scaffolding.git"
-  },
-  "bugs": {
-    "url": "http://github.com/sparanoid/almace-scaffolding/issues"
+    "url": "git://github.com/Dan-Zheng/blog.git"
   },
   "license": "MIT",
   "keywords": [
@@ -36,7 +33,7 @@
     "grunt-cleanempty": "^1.0.3",
     "grunt-coffeelint": "^0.0.15",
     "grunt-concurrent": "^2.0.3",
-    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^0.8.1",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-htmlmin": "^0.6.0",

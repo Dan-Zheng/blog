@@ -20,7 +20,7 @@ module.exports = (grunt) ->
     config:
       cfg: grunt.file.readYAML("_config.yml")
       pkg: grunt.file.readJSON("package.json")
-      amsf: grunt.file.readYAML("_amsf/_config.yml")
+      honne: grunt.file.readYAML("_honne/_config.yml")
       deploy: grunt.file.readYAML("_deploy.yml")
       app: "<%= config.cfg.source %>"
       dist: "<%= config.cfg.destination %>"
@@ -32,16 +32,16 @@ module.exports = (grunt) ->
         banner += " -->"
         banner
 
-    amsf:
-      base: "_amsf"
-      core: "<%= amsf.base %>/core"
+    honne:
+      base: "_honne"
+      core: "<%= honne.base %>/core"
       user:
         assets: "<%= config.app %>/assets"
       theme:
-        assets: "<%= amsf.user.assets %>/themes/<%= amsf.theme.current %>"
-        current: "<%= config.amsf.theme %>"
-        new_name: grunt.option("theme") or "<%= amsf.theme.current %>"
-        new_author: grunt.option("user") or "amsf"
+        assets: "<%= honne.user.assets %>/themes/<%= honne.theme.current %>"
+        current: "<%= config.honne.theme %>"
+        new_name: grunt.option("theme") or "<%= honne.theme.current %>"
+        new_author: grunt.option("user") or "honne"
 
     coffeelint:
       options:
@@ -59,10 +59,10 @@ module.exports = (grunt) ->
     lesslint:
       options:
         csslint:
-          csslintrc: "<%= amsf.theme.assets %>/_less/.csslintrc"
+          csslintrc: "<%= honne.theme.assets %>/_less/.csslintrc"
 
       test:
-        src: ["<%= amsf.theme.assets %>/_less/**/app*.less"]
+        src: ["<%= honne.theme.assets %>/_less/**/app*.less"]
 
     watch:
       options:
@@ -104,15 +104,15 @@ module.exports = (grunt) ->
         files: [
           {
             expand: true
-            cwd: "<%= amsf.user.assets %>/_js/"
+            cwd: "<%= honne.user.assets %>/_js/"
             src: ["**/*.js", "!*.min.js"]
-            dest: "<%= amsf.user.assets %>/js/"
+            dest: "<%= honne.user.assets %>/js/"
           }
           {
             expand: true
-            cwd: "<%= amsf.theme.assets %>/_js/"
+            cwd: "<%= honne.theme.assets %>/_js/"
             src: ["**/*.js", "!*.min.js"]
-            dest: "<%= amsf.theme.assets %>/js/"
+            dest: "<%= honne.theme.assets %>/js/"
           }
         ]
 
@@ -128,9 +128,9 @@ module.exports = (grunt) ->
 
         files: [
           expand: true
-          cwd: "<%= amsf.theme.assets %>/_less/"
+          cwd: "<%= honne.theme.assets %>/_less/"
           src: ["**/app*.less"]
-          dest: "<%= amsf.theme.assets %>/css/"
+          dest: "<%= honne.theme.assets %>/css/"
           ext: ".css"
         ]
 
@@ -139,7 +139,7 @@ module.exports = (grunt) ->
 
     postcss:
       serve:
-        src: "<%= amsf.theme.assets %>/css/*.css"
+        src: "<%= honne.theme.assets %>/css/*.css"
         options:
           map:
             inline: true
@@ -156,7 +156,7 @@ module.exports = (grunt) ->
 
     csscomb:
       options:
-        config: "<%= amsf.theme.assets %>/_less/.csscomb.json"
+        config: "<%= honne.theme.assets %>/_less/.csscomb.json"
 
       dist:
         files: [
@@ -268,7 +268,7 @@ module.exports = (grunt) ->
     cacheBust:
       options:
         algorithm: "md5"
-        assets: ["<%= amsf.user.assets %>/**/*"]
+        assets: ["<%= honne.user.assets %>/**/*"]
         baseDir: "<%= config.dist %>"
         deleteOriginals: true
         encoding: "utf8"
@@ -296,13 +296,13 @@ module.exports = (grunt) ->
 
       serve:
         options:
-          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml,_config.dev.yml"
+          config: "_config.yml,_honne/_config.yml,<%= config.app %>/_data/<%= honne.theme.current %>.yml,_config.dev.yml"
           drafts: true
           future: true
 
       dist:
         options:
-          config: "_config.yml,_amsf/_config.yml,<%= config.app %>/_data/<%= amsf.theme.current %>.yml"
+          config: "_config.yml,_honne/_config.yml,<%= config.app %>/_data/<%= honne.theme.current %>.yml"
           dest: "<%= config.dist %><%= config.base %>"
 
     shell:
@@ -321,33 +321,33 @@ module.exports = (grunt) ->
       sync_commit:
         command: "sh <%= config.deploy.s3_website.dest %>/auto-commit '<%= config.pkg.name %>'"
 
-      amsf__core__update_deps:
+      honne__core__update_deps:
         command: [
           "bundle update"
           "bundle install"
           "npm install"
         ].join("&&")
 
-      amsf__theme__to_app:
+      honne__theme__to_app:
         command: [
-          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/config.yml <%= config.app %>/_data/<%= amsf.theme.new_name %>.yml"
-          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/includes/  <%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/includes/"
-          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/layouts/   <%= config.app %>/_includes/themes/<%= amsf.theme.new_name %>/layouts/"
-          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/assets/    <%= config.app %>/assets/themes/<%= amsf.theme.new_name %>/"
-          "rsync -avz --delete --progress <%= amsf.base %>/themes/<%= amsf.theme.new_name %>/pages/     <%= config.app %>/_pages/themes/<%= amsf.theme.new_name %>/"
+          "rsync -avz --delete --progress <%= honne.base %>/themes/<%= honne.theme.new_name %>/config.yml <%= config.app %>/_data/<%= honne.theme.new_name %>.yml"
+          "rsync -avz --delete --progress <%= honne.base %>/themes/<%= honne.theme.new_name %>/includes/  <%= config.app %>/_includes/themes/<%= honne.theme.new_name %>/includes/"
+          "rsync -avz --delete --progress <%= honne.base %>/themes/<%= honne.theme.new_name %>/layouts/   <%= config.app %>/_includes/themes/<%= honne.theme.new_name %>/layouts/"
+          "rsync -avz --delete --progress <%= honne.base %>/themes/<%= honne.theme.new_name %>/assets/    <%= config.app %>/assets/themes/<%= honne.theme.new_name %>/"
+          "rsync -avz --delete --progress <%= honne.base %>/themes/<%= honne.theme.new_name %>/pages/     <%= config.app %>/_pages/themes/<%= honne.theme.new_name %>/"
         ].join("&&")
 
-      amsf__theme__to_cache:
+      honne__theme__to_cache:
         command: [
-          "rsync -avz --delete --progress <%= config.app %>/_data/<%= amsf.theme.current %>.yml                  <%= amsf.base %>/themes/<%= amsf.theme.current %>/config.yml"
-          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= amsf.theme.current %>/includes/ <%= amsf.base %>/themes/<%= amsf.theme.current %>/includes/"
-          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= amsf.theme.current %>/layouts/  <%= amsf.base %>/themes/<%= amsf.theme.current %>/layouts/"
-          "rsync -avz --delete --progress <%= config.app %>/assets/themes/<%= amsf.theme.current %>/             <%= amsf.base %>/themes/<%= amsf.theme.current %>/assets/"
-          "rsync -avz --delete --progress <%= config.app %>/_pages/themes/<%= amsf.theme.current %>/             <%= amsf.base %>/themes/<%= amsf.theme.current %>/pages/"
+          "rsync -avz --delete --progress <%= config.app %>/_data/<%= honne.theme.current %>.yml                  <%= honne.base %>/themes/<%= honne.theme.current %>/config.yml"
+          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= honne.theme.current %>/includes/ <%= honne.base %>/themes/<%= honne.theme.current %>/includes/"
+          "rsync -avz --delete --progress <%= config.app %>/_includes/themes/<%= honne.theme.current %>/layouts/  <%= honne.base %>/themes/<%= honne.theme.current %>/layouts/"
+          "rsync -avz --delete --progress <%= config.app %>/assets/themes/<%= honne.theme.current %>/             <%= honne.base %>/themes/<%= honne.theme.current %>/assets/"
+          "rsync -avz --delete --progress <%= config.app %>/_pages/themes/<%= honne.theme.current %>/             <%= honne.base %>/themes/<%= honne.theme.current %>/pages/"
         ].join("&&")
 
-      amsf__theme__to_dev_repo:
-        command: "rsync -avz --delete --progress --exclude=.git --exclude=node_modules <%= amsf.base %>/themes/<%= amsf.theme.current %>/ /Users/sparanoid/Git/amsf-<%= amsf.theme.current %> > rsync-theme-dev.log"
+      honne__theme__to_dev_repo:
+        command: "rsync -avz --delete --progress --exclude=.git --exclude=node_modules <%= honne.base %>/themes/<%= honne.theme.current %>/ /Users/sparanoid/Git/honne-<%= honne.theme.current %> > rsync-theme-dev.log"
 
     concurrent:
       options:
@@ -366,25 +366,25 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.user.assets %>/_js/"
+            cwd: "<%= honne.user.assets %>/_js/"
             src: ["**/*.js"]
-            dest: "<%= amsf.user.assets %>/js/"
+            dest: "<%= honne.user.assets %>/js/"
           }
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.theme.assets %>/_js/"
+            cwd: "<%= honne.theme.assets %>/_js/"
             src: ["**/*.js"]
-            dest: "<%= amsf.theme.assets %>/js/"
+            dest: "<%= honne.theme.assets %>/js/"
           }
         ]
 
-      amsf__core__to_app:
+      honne__core__to_app:
         files: [
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.core %>"
+            cwd: "<%= honne.core %>"
             src: [
               ".*"
               "*.json"
@@ -402,7 +402,7 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.core %>/_app/"
+            cwd: "<%= honne.core %>/_app/"
             src: [
               "*.json"
               "*.txt"
@@ -413,67 +413,67 @@ module.exports = (grunt) ->
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.core %>/_app/_includes/"
+            cwd: "<%= honne.core %>/_app/_includes/"
             src: [
-              "_amsf.html"
+              "_honne.html"
             ]
             dest: "<%= config.app %>/_includes/"
           }
           {
             expand: true
             dot: true
-            cwd: "<%= amsf.core %>/_app/_layouts/"
+            cwd: "<%= honne.core %>/_app/_layouts/"
             src: ["**"]
             dest: "<%= config.app %>/_layouts/"
           }
         ]
 
     gitclone:
-      amsf__core__add_remote:
+      honne__core__add_remote:
         options:
           repository: "https://github.com/sparanoid/almace-scaffolding.git"
           branch: "master"
-          directory: "<%= amsf.base %>/core/"
+          directory: "<%= honne.base %>/core/"
 
-      amsf__theme__add_remote:
+      honne__theme__add_remote:
         options:
-          repository: "https://github.com/<%= amsf.theme.new_author %>/amsf-<%= amsf.theme.new_name %>.git"
+          repository: "https://github.com/<%= honne.theme.new_author %>/honne-<%= honne.theme.new_name %>.git"
           branch: "master"
-          directory: "<%= amsf.base %>/themes/<%= amsf.theme.new_name %>/"
+          directory: "<%= honne.base %>/themes/<%= honne.theme.new_name %>/"
 
     gitpull:
-      amsf__core__update_remote:
+      honne__core__update_remote:
         options:
-          cwd: "<%= amsf.base %>/core/"
+          cwd: "<%= honne.base %>/core/"
 
-      amsf__theme__update_remote:
+      honne__theme__update_remote:
         options:
-          cwd: "<%= amsf.base %>/themes/<%= amsf.theme.current %>/"
+          cwd: "<%= honne.base %>/themes/<%= honne.theme.current %>/"
 
     gitclean:
       options:
         nonstandard: true
         directories: true
 
-      amsf__core__clean_git:
+      honne__core__clean_git:
         options:
-          cwd: "<%= gitpull.amsf__core__update_remote.options.cwd %>"
+          cwd: "<%= gitpull.honne__core__update_remote.options.cwd %>"
 
-      amsf__theme__clean_git:
+      honne__theme__clean_git:
         options:
-          cwd: "<%= gitpull.amsf__theme__update_remote.options.cwd %>"
+          cwd: "<%= gitpull.honne__theme__update_remote.options.cwd %>"
 
     gitreset:
       options:
         mode: "hard"
 
-      amsf__core__reset_git:
+      honne__core__reset_git:
         options:
-          cwd: "<%= gitpull.amsf__core__update_remote.options.cwd %>"
+          cwd: "<%= gitpull.honne__core__update_remote.options.cwd %>"
 
-      amsf__theme__reset_git:
+      honne__theme__reset_git:
         options:
-          cwd: "<%= gitpull.amsf__theme__update_remote.options.cwd %>"
+          cwd: "<%= gitpull.honne__theme__update_remote.options.cwd %>"
 
     clean:
       main:
@@ -481,10 +481,10 @@ module.exports = (grunt) ->
           ".tmp"
           "<%= config.dist %>"
           "<%= config.app %>/.jekyll-metadata"
-          "<%= amsf.theme.assets %>/css/"
-          "<%= amsf.theme.assets %>/js/"
-          "<%= amsf.user.assets %>/css/"
-          "<%= amsf.user.assets %>/js/"
+          "<%= honne.theme.assets %>/css/"
+          "<%= honne.theme.assets %>/js/"
+          "<%= honne.user.assets %>/css/"
+          "<%= honne.user.assets %>/js/"
         ]
 
     cleanempty:
@@ -492,22 +492,22 @@ module.exports = (grunt) ->
         src: ["<%= config.dist %>/**/*"]
 
     replace:
-      amsf__theme__update_config:
-        src: ["<%= amsf.base %>/_config.yml"]
-        dest: "<%= amsf.base %>/_config.yml"
+      honne__theme__update_config:
+        src: ["<%= honne.base %>/_config.yml"]
+        dest: "<%= honne.base %>/_config.yml"
         replacements: [
           {
             from: /(theme:)( +)(.+)/g
-            to: "$1$2<%= amsf.theme.new_name %>"
+            to: "$1$2<%= honne.theme.new_name %>"
           }
         ]
 
-      amsf__site__update_version:
+      honne__site__update_version:
         src: ["<%= config.app %>/_pages/index.html"]
         dest: "<%= config.app %>/_pages/index.html"
         replacements: [
           {
-            from: /("amsf-version">)\d+\.\d+\.\d+/g
+            from: /("honne-version">)\d+\.\d+\.\d+/g
             to: "$1<%= config.pkg.version %>"
           }
         ]
@@ -559,60 +559,60 @@ module.exports = (grunt) ->
         tagMessage: "chore: create tag %VERSION%"
         push: false
 
-  grunt.registerTask "theme-upgrade", "Upgrade specific theme from AMSF cache to app", [
-    "shell:amsf__theme__to_app"
+  grunt.registerTask "theme-upgrade", "Upgrade specific theme from honne cache to app", [
+    "shell:honne__theme__to_app"
   ]
 
-  grunt.registerTask "theme-save", "Save current (previously activated) theme to AMSF cache", ->
+  grunt.registerTask "theme-save", "Save current (previously activated) theme to honne cache", ->
     grunt.task.run [
-      "shell:amsf__theme__to_cache"
+      "shell:honne__theme__to_cache"
     ]
     if grunt.option("dev")
       grunt.task.run [
-        "shell:amsf__theme__to_dev_repo"
+        "shell:honne__theme__to_dev_repo"
       ]
 
   grunt.registerTask "theme-activate", "Activate specific theme", [
     "theme-upgrade"
     "theme-save"
-    "replace:amsf__theme__update_config"
+    "replace:honne__theme__update_config"
   ]
 
   grunt.registerTask "theme-add", "Add new theme from a GitHub repo", [
-    "gitclone:amsf__theme__add_remote"
+    "gitclone:honne__theme__add_remote"
     "theme-activate"
   ]
 
   grunt.registerTask "theme-update", "Update current theme from GitHub", [
-    "gitreset:amsf__theme__reset_git"
-    "gitclean:amsf__theme__clean_git"
-    "gitpull:amsf__theme__update_remote"
+    "gitreset:honne__theme__reset_git"
+    "gitclean:honne__theme__clean_git"
+    "gitpull:honne__theme__update_remote"
     "theme-upgrade"
   ]
 
-  grunt.registerTask "amsf-update", "Update ASMF", ->
+  grunt.registerTask "honne-update", "Update ASMF", ->
     # TODO: need better implement
-    if grunt.file.exists("_amsf/core/")
+    if grunt.file.exists("_honne/core/")
       grunt.task.run [
-        "gitreset:amsf__core__reset_git"
-        "gitclean:amsf__core__clean_git"
-        "gitpull:amsf__core__update_remote"
+        "gitreset:honne__core__reset_git"
+        "gitclean:honne__core__clean_git"
+        "gitpull:honne__core__update_remote"
       ]
     else
       grunt.task.run [
-        "gitclone:amsf__core__add_remote"
+        "gitclone:honne__core__add_remote"
       ]
     grunt.task.run [
-      "copy:amsf__core__to_app"
-      "shell:amsf__core__update_deps"
+      "copy:honne__core__to_app"
+      "shell:honne__core__update_deps"
     ]
 
   grunt.registerTask "init", "Initialize new project", [
     "theme-add"
   ]
 
-  grunt.registerTask "update", "Update AMSF and the activated theme", [
-    "amsf-update"
+  grunt.registerTask "update", "Update honne and the activated theme", [
+    "honne-update"
     "theme-update"
   ]
 
@@ -636,7 +636,7 @@ module.exports = (grunt) ->
         "theme-add"
         "theme-update"
         "theme-save"
-        "amsf-update"
+        "honne-update"
       ]
 
   grunt.registerTask "build", "Build site with jekyll", [
@@ -662,7 +662,7 @@ module.exports = (grunt) ->
     grunt.task.run [
       "bump-only:#{type or 'patch'}"
       "conventionalChangelog"
-      "replace:amsf__site__update_version"
+      "replace:honne__site__update_version"
       "bump-commit"
     ]
 
