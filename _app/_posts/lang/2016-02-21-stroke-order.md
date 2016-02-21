@@ -6,9 +6,9 @@ category: lang
 tags:
 ---
 
-Chinese characters, or kanji, are written with a specific stroke order. There are some basic stroke order rules: strokes are generally written from top to bottom and from left to right.
+Chinese characters, or kanji, are written with a specific [stroke order](https://en.wikipedia.org/wiki/Stroke_order). There are some basic stroke order rules: one is that strokes are generally written from top to bottom and from left to right.
 
-Interestingly, there are some differences in stroke order between Chinese and Japanese. (My personal opinion: Japanese stroke order is weird. Just look below.)
+_**Interestingly**_, there are some differences in stroke order between Chinese and Japanese. (My personal opinion: Japanese stroke order is weird. Just look below.)
 
 <p>
 	<img class="no-enlarge center" style="width: 200px; height: auto;" src="{{ site.file }}/right.png" alt="Stroke order for the 'right' character.">
