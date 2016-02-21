@@ -32,6 +32,12 @@ CV = {
             href: "http://sharedli.st/danzheng",
             size: 28,
             color: "#EE4056"
+        }, {
+            name: "Snapchat",
+            icon: "../img/social/snapchat.svg",
+            href: "http://d141gh7844fsr5.cloudfront.net/snapcode.png",
+            size: 28,
+            color: "#fffb37"
         }
         ],
         passiveLinks: []
