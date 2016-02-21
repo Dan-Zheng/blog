@@ -19,12 +19,12 @@
 {% comment %}
   Site title
 {% endcomment %}
-{% capture amsf_site_title %}{% if page.title != site.name %} · {{ site.name }}{% endif %}{% endcapture %}
+{% capture honne_site_title %}{% if page.title != site.name %} · {{ site.name }}{% endif %}{% endcapture %}
 
 {% comment %}
   Site description
 {% endcomment %}
-{% capture amsf_site_desc %}
+{% capture honne_site_desc %}
   {% if page.permalink != '/' %}
     {% if page.desc %}
       {{ page.desc | strip_html | strip_newlines | xml_escape }}
@@ -41,48 +41,48 @@
 {% comment %}
   Site base URL
 {% endcomment %}
-{% capture amsf_site_base %}{{ site.base | prepend: site.url }}{% endcapture %}
+{% capture honne_site_base %}{{ site.base | prepend: site.url }}{% endcapture %}
 
 {% comment %}
   Theme base URL
 {% endcomment %}
-{% capture amsf_theme_base %}{{ site.theme | prepend: '/themes/' }}{% endcapture %}
+{% capture honne_theme_base %}{{ site.theme | prepend: '/themes/' }}{% endcapture %}
 
 {% comment %}
   Theme assets base URL
 {% endcomment %}
-{% capture amsf_theme_assets %}{{ site.theme | prepend: '/themes/' | prepend: site.assets | prepend: site.base }}{% endcapture %}
+{% capture honne_theme_assets %}{{ site.theme | prepend: '/themes/' | prepend: site.assets | prepend: site.base }}{% endcapture %}
 
 {% comment %}
   User assets base URL
 {% endcomment %}
-{% capture amsf_user_assets %}{{ site.assets | prepend: site.base }}{% endcapture %}
+{% capture honne_user_assets %}{{ site.assets | prepend: site.base }}{% endcapture %}
 
 {% comment %}
   Feed URL
 {% endcomment %}
-{% capture amsf_feed_url %}{{ site.feed | prepend: site.base | replace: '/index.xml', '/' }}{% endcapture %}
+{% capture honne_feed_url %}{{ site.feed | prepend: site.base | replace: '/index.xml', '/' }}{% endcapture %}
 
 {% comment %}
   Page title
 {% endcomment %}
-{% capture amsf_page_title %}{{ page.title | strip_html | xml_escape }}{% endcapture %}
+{% capture honne_page_title %}{{ page.title | strip_html | xml_escape }}{% endcapture %}
 
 {% comment %}
   Page URL
 {% endcomment %}
-{% capture amsf_page_url %}{{ page.url | prepend: amsf_site_base | replace: '/index.html', '/' | replace: '/index.htm', '/' | replace: '/index.xml', '/' }}{% endcapture %}
+{% capture honne_page_url %}{{ page.url | prepend: honne_site_base | replace: '/index.html', '/' | replace: '/index.htm', '/' | replace: '/index.xml', '/' }}{% endcapture %}
 
 {% comment %}
   Page publish date
 {% endcomment %}
-{% capture amsf_page_pubdate %}{{ page.date }}{% endcapture %}
+{% capture honne_page_pubdate %}{{ page.date }}{% endcapture %}
 
 
 {% comment %}
   Page update date
 {% endcomment %}
-{% capture amsf_page_update %}
+{% capture honne_page_update %}
   {% assign date_publish = page.date | date: "%b %-d, %Y" %}
   {% assign date_update  = page.last_modified_at | date: "%b %-d, %Y" %}
 
@@ -96,61 +96,61 @@
 {% comment %}
   Page words and reading time
 {% endcomment %}
-{% assign amsf_page_words_raw = page.content | number_of_words %}
-{% assign amsf_page_reading_time_raw = amsf_page_words_raw | divided_by: 200 %}
+{% assign honne_page_words_raw = page.content | number_of_words %}
+{% assign honne_page_reading_time_raw = honne_page_words_raw | divided_by: 200 %}
 
-{% capture amsf_page_words %}
-  {% if amsf_page_words_raw == 0 %}
+{% capture honne_page_words %}
+  {% if honne_page_words_raw == 0 %}
     No word
-  {% elsif amsf_page_words_raw == 1 %}
+  {% elsif honne_page_words_raw == 1 %}
     1 word
   {% else %}
-    {{ amsf_page_words_raw }} words
+    {{ honne_page_words_raw }} words
   {% endif %}
 {% endcapture %}
 
-{% capture amsf_page_reading_time %}
-  {% if amsf_page_reading_time_raw == 0 %}
+{% capture honne_page_reading_time %}
+  {% if honne_page_reading_time_raw == 0 %}
     Less than 1 min
-  {% elsif amsf_page_reading_time_raw == 1 %}
+  {% elsif honne_page_reading_time_raw == 1 %}
     1 min
-  {% elsif amsf_page_reading_time_raw >= 60 %}
+  {% elsif honne_page_reading_time_raw >= 60 %}
 
-    {% assign amsf_page_reading_time_hr = amsf_page_reading_time_raw | divided_by: 60 %}
-    {% assign amsf_page_reading_time_min = amsf_page_reading_time_raw | modulo: 60 %}
+    {% assign honne_page_reading_time_hr = honne_page_reading_time_raw | divided_by: 60 %}
+    {% assign honne_page_reading_time_min = honne_page_reading_time_raw | modulo: 60 %}
 
-    {% capture amsf_page_reading_time_hr_unit %}
-      {% if amsf_page_reading_time_hr == 1 %}
+    {% capture honne_page_reading_time_hr_unit %}
+      {% if honne_page_reading_time_hr == 1 %}
         hr
       {% else %}
         hrs
       {% endif %}
     {% endcapture %}
 
-    {% capture amsf_page_reading_time_min_unit %}
-      {% if amsf_page_reading_time_min > 1 %}
+    {% capture honne_page_reading_time_min_unit %}
+      {% if honne_page_reading_time_min > 1 %}
         mins
-      {% elsif amsf_page_reading_time_min == 1 %}
+      {% elsif honne_page_reading_time_min == 1 %}
         min
       {% endif %}
     {% endcapture %}
 
-    {% capture amsf_page_reading_time_min_figure %}
-      {% if amsf_page_reading_time_min != 0 %}
-        {{ amsf_page_reading_time_min }}
+    {% capture honne_page_reading_time_min_figure %}
+      {% if honne_page_reading_time_min != 0 %}
+        {{ honne_page_reading_time_min }}
       {% endif %}
     {% endcapture %}
 
-    {{ amsf_page_reading_time_hr }} {{ amsf_page_reading_time_hr_unit | strip }} {{ amsf_page_reading_time_min_figure | strip }} {{ amsf_page_reading_time_min_unit | strip }}
+    {{ honne_page_reading_time_hr }} {{ honne_page_reading_time_hr_unit | strip }} {{ honne_page_reading_time_min_figure | strip }} {{ honne_page_reading_time_min_unit | strip }}
   {% else %}
-    {{ amsf_page_reading_time_raw }} mins
+    {{ honne_page_reading_time_raw }} mins
   {% endif %}
 {% endcapture %}
 
 {% comment %}
   Page type (used by Open Graph)
 {% endcomment %}
-{% capture amsf_page_type %}
+{% capture honne_page_type %}
   {% if page.permalink == '/' %}
     website
   {% else %}
@@ -161,7 +161,7 @@
 {% comment %}
   Page language tag
 {% endcomment %}
-{% capture amsf_page_lang %}
+{% capture honne_page_lang %}
   {% if page.languages %}
     {% if page.languages[0] != null %}
       lang="{{ page.languages | first }}"
@@ -174,7 +174,7 @@
 {% comment %}
   Page custom CSS
 {% endcomment %}
-{% capture amsf_page_css %}
+{% capture honne_page_css %}
   {% if page.css %}
     <style>
       {{ page.css }}
@@ -185,14 +185,14 @@
 {% comment %}
   Page thumbnail
 {% endcomment %}
-{% capture amsf_page_thumb %}
+{% capture honne_page_thumb %}
   {{ site.file }}/thumb/{% if page.thumb %}{{ page.thumb }}{% else %}na.png{% endif %}
 {% endcapture %}
 
 {% comment %}
   Google Analytics tracking code
 {% endcomment %}
-{% capture amsf_google_analytics %}
+{% capture honne_google_analytics %}
   {% if site.google_analytics.enabled %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

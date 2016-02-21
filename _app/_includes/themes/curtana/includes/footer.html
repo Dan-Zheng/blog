@@ -6,7 +6,7 @@
       <li><a href="{{ site.data.authors.web }}/">{{ site.data.authors.default.nickname  }}</a></li>
 
       {% if site.credits %}
-        <li><a href="http://sparanoid.com/lab/amsf/" title="Almace Scaffolding">AMSF</a></li>
+        <li><a href="http://sparanoid.com/lab/honne/" title="Almace Scaffolding">honne</a></li>
         <li><a href="{{ site.data.curtana.meta.url }}" title="{{ site.data.curtana.meta.name }}">{{ site.data.curtana.meta.name }}</a></li>
       {% endif %}
 
@@ -15,7 +15,7 @@
       {% endif %}
 
       <li><a href="{{ site.data.authors.github | prepend: 'http://github.com/' }}/">github</a></li>
-      <!--<li><a href="{{ amsf_feed_url }}" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>-->
+      <!--<li><a href="{{ honne_feed_url }}" title="Feed - Atom (The Atom Syndication Format)">Atom</a></li>-->
 
     </ul>
   </footer>
@@ -23,7 +23,7 @@
 
 <!-- The following code is an example use of including external JavaScript libraries -->
 {% if page.plugin == 'intense' %}
-  <script src="{{ '/js/intense.js' | prepend: amsf_theme_assets }}"></script>
+  <script src="{{ '/js/intense.js' | prepend: honne_theme_assets }}"></script>
   <script>
     window.onload = function() {
       var fx = document.querySelectorAll('p > img:not(.no-intense)');
@@ -41,35 +41,35 @@
 {% endif %}
 
 <!-- Theme scripts -->
-<script src="{{ '/js/app.js?assets-inline' | prepend: amsf_theme_assets }}"></script>
+<script src="{{ '/js/app.js?assets-inline' | prepend: honne_theme_assets }}"></script>
 
 <!-- User custom scripts -->
-<script src="{{ '/js/user.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+<script src="{{ '/js/user.js?assets-inline' | prepend: honne_user_assets }}"></script>
 
 {% if page.permalink == '/'%}
-    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: honne_user_assets }}"></script>
     <link rel="stylesheet" href="{{ '/assets/bower_components/animate.css/animate.min.css' }}">
-    <script src="{{ '/bower_components/letteringjs/jquery.lettering.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
-    <script src="{{ '/bower_components/textillate/jquery.textillate.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
-    <script src="{{ '/js/index.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/letteringjs/jquery.lettering.js'></script>?assets-inline' | prepend: honne_user_assets }}"></script>
+    <script src="{{ '/bower_components/textillate/jquery.textillate.js'></script>?assets-inline' | prepend: honne_user_assets }}"></script>
+    <script src="{{ '/js/index.js?assets-inline' | prepend: honne_user_assets }}"></script>
 {% endif %}
 
 {% if page.permalink == '/'%}
-    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: honne_user_assets }}"></script>
     <link rel="stylesheet" href="{{ '/assets/bower_components/animate.css/animate.min.css' }}">
-    <script src="{{ '/bower_components/letteringjs/jquery.lettering.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
-    <script src="{{ '/bower_components/textillate/jquery.textillate.js'></script>?assets-inline' | prepend: amsf_user_assets }}"></script>
-    <script src="{{ '/js/index.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/letteringjs/jquery.lettering.js'></script>?assets-inline' | prepend: honne_user_assets }}"></script>
+    <script src="{{ '/bower_components/textillate/jquery.textillate.js'></script>?assets-inline' | prepend: honne_user_assets }}"></script>
+    <script src="{{ '/js/index.js?assets-inline' | prepend: honne_user_assets }}"></script>
 {% endif %}
 
 {% if page.permalink == '/about/'%}
-    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/bower_components/jquery/dist/jquery.min.js?assets-inline' | prepend: honne_user_assets }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-    <script src="{{ '/js/contact.js?assets-inline' | prepend: amsf_user_assets }}"></script>
+    <script src="{{ '/js/contact.js?assets-inline' | prepend: honne_user_assets }}"></script>
 {% endif %}
 
 <!-- Google Analytics tracking code -->
-{{ amsf_google_analytics }}
+{{ honne_google_analytics }}
 
 <!-- Foot hooks -->
 {% if page.foot %}

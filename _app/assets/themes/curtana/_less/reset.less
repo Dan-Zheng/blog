@@ -22,18 +22,25 @@ body {
   image-rendering: optimizequality;
   transition: all .2s ease;
 
+  @media (max-width: @breakpoint-lg) {
+    .padding-offset(@space-lg, @space-lg);
+    font-size: (@font-size * 0.95);
+  }
+
   @media (max-width: @breakpoint-md) {
     .padding-offset(@space-md, @space-md);
-    font-size: (@font-size * 1.4);
+    font-size: (@font-size * 0.9);
   }
 
   @media (max-width: @breakpoint-sm) {
     .padding-offset(@space-sm, @space-sm);
-    font-size: (@font-size * 2.4);
+    font-size: (@font-size * 0.85);
+    // font-size: (@font-size * 2.4);
   }
 
   @media (max-width: @breakpoint-xs) {
-    font-size: (@font-size * 3.2);
+      font-size: (@font-size * 0.8);
+    // font-size: (@font-size * 3.2);
   }
 
   // All iOS devices, the easiest way
