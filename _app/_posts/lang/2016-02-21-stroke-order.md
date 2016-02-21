@@ -17,3 +17,5 @@ _**Interestingly**_, there are some differences in stroke order between Chinese 
 <p>
 	<img class="no-enlarge center" style="width: 200px; height: auto;" src="{{ site.file }}/left.png" alt="Stroke order for the 'left' character.">
 </p>
+
+Weird, huh.
