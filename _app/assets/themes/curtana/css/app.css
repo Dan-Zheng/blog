@@ -1162,9 +1162,8 @@ body:hover .latest {
 .content {
   margin-bottom: 8vmin;
   }
-.content ul,
-.content ol,
-.content p {
+.content p,
+.content li {
   font-size: 88%;
   }
 .content h2 {
