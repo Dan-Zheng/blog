@@ -6,10 +6,10 @@
 ignore_files:   --exclude=lab
 
 sftp:
-  user: rsync
+  user: dan
   port: 2233
-  host: caladbolg.sparanoid.com
-  dest: /srv/www/sparanoid.com/public_html
+  host: hon-ne.me
+  dest: /var/www/default/public_html
 
 s3_website:
-  dest: ~/Git/sparanoid.com-prod
+  dest: ~/Sites/blog/test/.

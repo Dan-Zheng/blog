@@ -315,7 +315,7 @@ module.exports = (grunt) ->
 
       # Copy compiled static files to local directory for further post-process
       sync_local:
-        command: "rsync -avz --delete --progress <%= config.deploy.ignore_files %> <%= jekyll.dist.options.dest %>/ <%= config.deploy.s3_website.dest %>/site/<%= config.base %> > rsync-s3_website.log"
+        command: "rsync -avz --delete --progress <%= config.deploy.ignore_files %> <%= jekyll.dist.options.dest %>/ <%= config.deploy.s3_website.dest %><%= config.base %> > rsync-s3_website.log"
 
       # Auto commit untracked files sync'ed from sync_local
       sync_commit:
