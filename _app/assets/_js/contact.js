@@ -38,6 +38,12 @@ CV = {
             href: "http://d141gh7844fsr5.cloudfront.net/snapcode.png",
             size: 28,
             color: "#fffb37"
+        }, {
+            name: "WeChat",
+            icon: "../img/social/wechat.svg",
+            href: "http://d141gh7844fsr5.cloudfront.net/wechat.png",
+            size: 28,
+            color: "#49A231"
         }
         ],
         passiveLinks: []
