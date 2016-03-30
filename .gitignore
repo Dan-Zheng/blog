@@ -29,9 +29,4 @@ node_modules
 bower_components
 
 # Hon-ne specified
-_honne/themes
-_honne/core
 _site
-_app/assets/**/js
-_app/assets/**/css
-.jekyll-metadata
