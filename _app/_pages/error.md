@@ -6,8 +6,6 @@ desc: 错误・エラー・Error
 category: home
 ---
 
-Oops.
-
-This is not the webpage you are looking for.
+Oops. This page does not exist.
 
 Sorry. :(
