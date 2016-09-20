@@ -12,7 +12,7 @@ CV = {
             name: "Facebook",
             icon: "../img/social/facebook.svg",
             size: 28,
-            href: "https://www.facebook.com/VoidQuery",
+            href: "https://www.facebook.com/danzheng0",
             color: "#3B5999"
         }, {
             name: "Github",

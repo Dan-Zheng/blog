@@ -15,7 +15,7 @@ markdown:       kramdown
 highlighter:    rouge
 include:        ["_pages"]
 exclude:        ["_pages/themes"]
-show_drafts: null
+show_drafts: false
 
 #
 # Jekyll serve settings
